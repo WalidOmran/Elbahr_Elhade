@@ -1,0 +1,76 @@
+.products-area {
+    background: url('../assetts/img/backgrounds/new.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 999999;
+    .products--header {
+        padding-top: 81px;
+        padding-bottom: 50px;
+        z-index: 99999;
+    }
+    .products-area__slider {
+        
+        .owl-stage{
+            display: flex;
+            justify-content: center;
+        
+            .owl-item {
+                max-width: 322px !important;
+                .card {
+                    max-width: 322px;
+                    max-height: 508px;
+                    padding: 11px 6px 31px;
+                    border-radius: 10px;
+                    .card__figure {
+                        .card__img {
+                            max-width: 310px;
+                            max-height: 248px;
+                            margin: 0 0 6px;
+                        }
+                    }
+                    .card__body {
+                        padding: 0  12px;
+                        hr {
+                            height: 4px;
+                            background-color: $mainColor;
+                            color: $mainColor;
+                        }
+                        .card__title {
+                            font-size: 25px;
+                            font-weight: bold;
+                            color: #191414;
+                            text-align: $end;
+                        }
+                        .card__desc {
+                            margin: 13.5px 0 37px;
+                            font-size: 14px;
+                            color: #8b8e8f;
+                            text-align: $end;
+                        }
+                    }
+                    .card__footer {
+                        padding: 0  12px;
+                        justify-content: space-between;
+
+                        .card__price {
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: $mainColor;
+                        }
+                        .card--btn.our-btn {
+                            width: 124px;
+                            height: 39px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .products--btn {
+        position: relative;
+        z-index: 99999;
+        font-size: 22px;
+        margin-top: 67px;
+        margin-bottom: 86px;
+    }
+}

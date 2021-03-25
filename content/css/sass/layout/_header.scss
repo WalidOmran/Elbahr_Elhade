@@ -1,0 +1,97 @@
+.main-header {
+    .main-header__top-nav {
+        background-color: $mainColor;
+        .main-header__nav-content {
+            .main-header__info {
+                .main-header__link {
+                    display: inline-block;
+                    padding: 12px;
+                    margin-top: 2px;
+                    margin-#{$start}: 0px;
+                    margin-#{$end}: 52px;
+                    font-size: 16px;
+                    text-align: $start;
+                    @media (max-width: 576px) {
+                     margin: 0 !important;            
+                    }
+                }
+            }
+            .main-header__social-media {
+                .main-header__link {
+                    .main-header__icon {
+                        display: inline-block;
+                        width: 29px;
+                        height: 29px;
+                        line-height: 29px;
+                        margin: 10px auto 2px auto;
+                        margin-#{$end}: 7px;
+                        margin-#{$start}: 10px;
+                        text-align: center;
+                        border: solid 1px #fff;
+                        border-radius: 50%;
+                       
+                    }
+                }
+                 @media (max-width: 576px) {
+                     margin: auto; 
+                     margin-bottom: 12px;           
+                }
+            }
+        }
+    }
+    .main-header__nav {
+        padding: 21px 0px;
+        overflow: hidden;
+        .main-header__logo {
+            .main-header__logo-img {
+                width: 229px;
+            }
+            
+        }  
+        
+        .navbar-collapse {
+            @media (max-width: 991px) {
+                position: fixed;
+                top: 0;
+                #{$end}: auto;
+                #{$start}: 100%;
+                padding: 70px 0;
+                background-color:#fff;
+                transition: #{$start} .3s, #{$end} .3s;  
+                z-index: 9999999;        
+            }
+             .navbar-toggler {
+                position: absolute;
+                top: 25px;
+                #{$start}: auto;
+                #{$end}: 50px;
+                outline: none;
+                &:checked {
+                    outline: none;
+                }
+            }
+            .navbar-nav {
+                margin-#{$start}: auto;
+                margin-#{$end}: 0;
+                .nav-item {
+                    margin-#{$start}: 68px;
+                    margin-#{$end}: 0px;
+                    .nav-link {
+                        font-size: 18px;
+                        color: #1d1818;
+
+                    }
+                    .active {
+                        color: $mainColor;
+                    }
+                }
+            } 
+        }
+        .navbar-collapse.show {
+            #{$end}: auto;
+            #{$start}: 0;
+        }
+        
+    }
+}
+

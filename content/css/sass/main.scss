@@ -1,0 +1,15 @@
+@import "helpers/variables";
+@import "helpers/mixin";
+@import "helpers/functions";
+@import "layout/globle";
+@import "components/buttons";
+@import "components/headings";
+
+
+@import "layout/header";
+@import "layout/slider";
+@import "layout/about";
+@import "layout/products";
+@import "layout/contact-us";  
+@import "layout/footer"; 
+@import "options/lang";

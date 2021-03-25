@@ -1,0 +1,35 @@
+/******** About Us ********/
+.about-us {
+    padding-top: 76px;
+    .about-us__info {
+        padding-top: 67px;
+        .about-us__desc {
+            font-size: 18px;
+            line-height: 1.67;
+            padding-bottom: 13px;
+            // padding-#{$start}: 0px;
+            // padding-#{$end}: 50px;
+            text-align: $start;
+        }
+    }
+    .about-us__img-box {
+        height: 100%;
+        padding-top: 67px;
+        padding-bottom: 67px;
+        padding-#{$end}: 0px;
+        padding-#{$start}: 110px;
+        @media (max-width: 992px) { 
+            padding-#{$end}: 0px;
+            padding-#{$start}: 0px;
+        }
+        .about-us__img {
+            max-width: 469px;
+            height: 80%;
+            box-shadow: 0 10px 20px 0 #c5c9cb;
+            @media (max-width: 992px) { 
+                width: 100%;
+                height: auto;
+             }
+        }
+    }
+}

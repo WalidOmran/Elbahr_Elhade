@@ -1,0 +1,85 @@
+.rtl {
+    direction: rtl;
+    $start: right;
+    $end: left;
+    /******** main-header ********/
+    .main-header {
+        /******** main-header__top-nav ********/
+        .main-header__top-nav {
+            .main-header__nav-content {
+                .main-header__info {
+                    .main-header__link {
+                        margin-#{$start}: 0px;
+                        margin-#{$end}: 52px;
+                        text-align: $start;
+                    }
+                }
+                .main-header__social-media {
+                    .main-header__link {
+                        .main-header__icon {
+                            margin-#{$end}: 7px;
+                            margin-#{$start}: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        /******** main-header__nav ********/
+        .main-header__nav {
+            .navbar-collapse {
+                 @media (max-width: 991px) {
+                    #{$end}: auto;
+                    #{$start}: 100%;
+                 }
+                .navbar-toggler {
+                    #{$start}: auto;
+                    #{$end}: 50px;
+                }
+                .navbar-nav {
+                    margin-#{$start}: auto;
+                    margin-#{$end}: 0;
+                    .nav-item {
+                        margin-#{$start}: 68px;
+                        margin-#{$end}: 0px;
+                    }
+                } 
+            }
+            .navbar-collapse.show {
+                #{$end}: auto;
+                #{$start}: 0;
+            }
+        }
+    }
+
+    /******** About Us ********/
+    .about-us {
+        .about-us__info {
+            .about-us__desc {
+                // padding-#{$start}: 0px;
+                // padding-#{$end}: 50px;
+                text-align: $start;
+            }
+        }
+        .about-us__img-box {
+            padding-#{$end}: 0px;
+            padding-#{$start}: 110px;
+            @media (max-width: 992px) { 
+                padding-#{$end}: 0px;
+                padding-#{$start}: 0px;
+            }
+        }
+    }
+    /******** Contact Us ********/
+    .contact-us {
+        .contac-us__form {
+            .contac-us__input {
+                margin-#{$start}: 0px;
+                margin-#{$end}: 31px;
+            }
+        }
+        #email-error {
+            #{$end}: 0;
+            #{$start}: 48%;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/* cairo-regular - latin_arabic */
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cairo/cairo-v9-latin_arabic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/cairo/cairo-v9-latin_arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cairo/cairo-v9-latin_arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cairo/cairo-v9-latin_arabic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cairo/cairo-v9-latin_arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cairo/cairo-v9-latin_arabic-regular.svg#Cairo') format('svg'); /* Legacy iOS */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+ul, ol { list-style: none;}
+a { text-decoration: none; }
+/* width */
+::-webkit-scrollbar {
+  width: 11px;
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+}
+
+::-webkit-scrollbar-thumb {
+  background: $mainColor; 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+}
+.overlay {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.96));
+    z-index: 1;
+    }

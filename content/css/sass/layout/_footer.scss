@@ -1,0 +1,28 @@
+.main-footer {
+    padding: 13px 0;
+    background-color: $mainColor;
+    .main-footer-content {
+        .main-footer__info {
+            .main-footer__desc {
+                font-size: 14px;
+                text-align: $start;
+            }
+        }
+        .main-footer__social-media {
+            .main-footer__link {
+                .main-footer__icon {
+                    display: inline-block;
+                    width: 29px;
+                    height: 29px;
+                    line-height: 29px;
+                    margin: 10px auto 2px auto;
+                    margin-#{$end}: 7px;
+                    margin-#{$start}: 10px;
+                    text-align: center;
+                    border: solid 1px #fff;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
